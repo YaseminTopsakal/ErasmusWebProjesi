@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Egitim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href=".\main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00184d405e.js" crossorigin="anonymous"></script>
+    <script src=".\main.js"></script>
+</head>
+<body>
+    <div class="container conGonde">
+        <nav class=" navbar-expand-md bg-white">
+
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <svg class="bi me-2" width="32" height="24" role="img" aria-label="Bootstrap"><a><img src=".\images\khas-logo-test.png" width="80" height="80" /></a></svg>
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 mainNavbarA" id="btnAnasayfa">Anasayfa</a></li>
+                    <li><a href="Hakkinda.html" class="nav-link px-2 mainNavbarA" id="btnHakkinda">Hakkında</a></li>
+                    <li><a href="sorular.html" class="nav-link px-2 mainNavbarA " id="btnSorular">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="iletisim.html" class="nav-link px-2 mainNavbarA " id="btnIletisim">İletişim</a></li>
+                    <li><a href="basvur.html" class="nav-link px-2 mainNavbarA active" id="btnBasvur">Başvur</a></li>
+                </ul>
+
+                <div class="  col-md-3 text-end" id="girisDivBtnGirisKayit">
+                    <a href="giris.html"><button type="button" class="btn btn-outline-primary me-2 MainNavbar" id="btnGiris">Giriş Yap</button></a>
+                    <a href="kayitOl.html"><button type="button" class="btn btn-primary MainNavbar" id="btnKayit">Kayıt Ol</button></a>
+                </div>
+
+                <div class="text-end " id="LogOutDiv" style="display:none">
+                    <span id="kullaniciAdiSpan"></span>
+
+                    <button type="button" id="butonLogOut" class="btn btn-danger" onclick="Logout()">Çıkış</button>
+                </div>
+
+            </header>
+        </nav>
+
+
+        <main class="govde">
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 style="color: #0a50ad;">Başvuru</h3>
+                    <p>Erasmus programına başvuru yapmak için lütfen istenen bilgileri doldurunuz. </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                            <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                            <span class="fs-4">Formlar</span>
+                        </a>
+                        <hr>
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="BsvKisiselBilgi.html" class="nav-link link-dark basvurFormA" aria-current="page">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                                    Kişisel Bilgiler
+                                </a>
+                            </li>
+                            <li>
+                                <a href="BsvEgitim.html" class="nav-link active " style="background-color: #0a50ad;" aria-current="page">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                                    Eğitim Bilgileri
+                                </a>
+                            </li>
+                            <li>
+                                <a href="BsvIletisim.html" class="nav-link link-dark basvurFormA">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                                    İletişim Bilgileri
+                                </a>
+                            </li>
+                            <li>
+                                <a href="BsvDokuman.html" class="nav-link link-dark basvurFormA">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                                    Doküman Yükle
+                                </a>
+                            </li>
+
+                        </ul>
+                        <hr>
+
+                    </div>
+                </div>
+
+
+                <div class="col-9" style="min-width: 768px;">
+                    <form class="px-2 py-2" style="border:solid;">
+                        <h5 class="text-center">Eğitim Bilgileri</h5>
+                        <div class="row mb-3 mt-3">
+                            <label for="bsvUni" class="col-sm-2 col-form-label">*Üniversite Adı:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="bsvUni" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="bsvBolum" class="col-sm-2 col-form-label">*Bölüm:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="bsvBolum" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="bsvEgitimDurum" class="col-sm-2 col-form-label">*Eğitim Durumu:</label>
+                            <div class="col-sm-10">
+                                <select class="mt-2" id="bsvEgitimDurum" required>
+                                    <option value="">Eğitim durumu</option>
+                                    <option value="0">Mezun</option>
+                                    <option value="1">Öğrenci</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="bsvMezuniyetTarih" class="col-sm-2 col-form-label">*Mezuniyet tarihi:</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="bsvMezuniyetTarih" required>
+                            </div>
+
+                        </div>
+                        <div class="row mb-3">
+                            <label for="bsvGPA" class="col-sm-2 col-form-label">*GPA:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="bsvGPA" required>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <button id="btnBsvKisiselBilgiKaydet" type="submit" class="btn btn-primary text-center" style="background-color: #0a50ad;">Kaydet</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+
+        <div class="footer fixed-bottom">
+            <footer class=" d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
+                <div class="col-md-4 d-flex align-items-center">
+
+                    <span class="mb-3 mb-md-0 " style="color: #0a50ad;">© 2023 Kadir Has Üniversitesi</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-twitter" style="color: #0a50ad;"></i></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-instagram" style="color: #0a50ad;"></i></svg></a></li>
+                    <li class="ms-3"><a class="text-muted mx-3" href="https://www.linkedin.com/feed/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-linkedin" style="color: #0a50ad;"></i></svg></a></li>
+                </ul>
+            </footer>
+        </div>
+
+
+
+        <script>
+            checkLogin();
+        </script>
+    </div>
+</body>
+</html>

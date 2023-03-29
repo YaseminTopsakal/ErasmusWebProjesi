@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>KayitOl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href=".\main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00184d405e.js" crossorigin="anonymous"></script>
+    <script src=".\main.js"></script>
+</head>
+<body>
+
+    <div class="container conGonde">
+        <nav class=" navbar-expand-md bg-white">
+
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <svg class="bi me-2" width="32" height="24" role="img" aria-label="Bootstrap"><a><img src=".\images\khas-logo-test.png" width="80" height="80" /></a></svg>
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 mainNavbarA" id="btnAnasayfa">Anasayfa</a></li>
+                    <li><a href="Hakkinda.html" class="nav-link px-2 mainNavbarA" id="btnHakkinda">Hakkında</a></li>
+                    <li><a href="sorular.html" class="nav-link px-2 mainNavbarA " id="btnSorular">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="iletisim.html" class="nav-link px-2 mainNavbarA " id="btnIletisim">İletişim</a></li>
+                    <li><a href="basvur.html" class="nav-link px-2 mainNavbarA " id="btnBasvur" style="display:none;">Başvur</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <a href="giris.html"><button type="button" class="btn btn-outline-primary me-2 MainNavbar" id="btnGiris">Giriş Yap</button></a>
+                    <a href="kayitOl.html"><button type="button" class="btn btn-primary " id="btnKayit" style="background-color: white; color: #0a50ad;">Kayıt Ol</button></a>
+                </div>
+            </header>
+        </nav>
+
+
+        <main class="govde">
+
+            <div class="row">
+
+                <div class=" col-3">
+
+                </div>
+
+                <div class="col-6">
+
+
+
+                    <main class="form-signin w-100 m-auto">
+                        <form class="text-center  need-validations">
+
+                            <h1 class="h3 mb-3 fw-normal " style="color: #0a50ad;"> <i class="fa-regular fa-pen-to-square  " style="color: #0a50ad;"></i>Kayıt Ol</h1>
+
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="kayitKullaniciAdi" placeholder="Kullici Adi" required>
+                                <label for="floatingInput">Kullanıcı Adı</label>
+                            </div>
+                            <div class="form-floating  mb-2">
+                                <input type="password" class="form-control" id="kayitPassword1" placeholder="Password" required>
+                                <label for="floatingPassword">Şifre</label>
+                            </div>
+                            <div class="form-floating  mb-2">
+                                <input type="password" class="form-control" id="kayitPassword2" placeholder="Password" required>
+                                <label for="floatingPassword">Şifrenizi tekrar edin</label>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <p id="kayitSifreText"></p>
+
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                        <button class="w-100 btn btn-lg btn-primary " style="background-color: #0a50ad; color:white;" type="button" id="btnKayitOl" onclick="kayitSifreKontrol()">Kayıt Ol</button>
+
+                    </main>
+                </div>
+
+                <div class=" col-3">
+
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <div class="footer fixed-bottom ">
+            <footer class=" d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top  ">
+                <div class="col-md-4 d-flex align-items-center">
+
+                    <span class="mb-3 mb-md-0 " style="color: #0a50ad;">© 2023 Kadir Has Üniversitesi</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-twitter" style="color: #0a50ad;"></i></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-instagram" style="color: #0a50ad;"></i></svg></a></li>
+                    <li class="ms-3"><a class="text-muted mx-3" href="https://www.linkedin.com/feed/" target="_blank"><svg class="bi" width="24" height="24"><i class="fa-brands fa-linkedin" style="color: #0a50ad;"></i></svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

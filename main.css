@@ -1,0 +1,81 @@
+﻿
+.conGonde {
+    min-height: 100%;
+    position: relative;
+   
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    background-color:white;
+    padding: 0px 20px;
+}
+.govde {
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+
+.MainNavbar {
+    background-color: #0a50ad;
+    color:white;
+}
+    .MainNavbar:hover {
+        background-color: white;
+        color: #0a50ad;
+    }
+
+.detay {
+    background-color: #0a50ad;
+    color: white;
+}
+    .detay:hover {
+        background-color: white;
+        color: #0a50ad;
+    }
+
+.btnIndexNavbar{
+    color:white;
+    text-decoration:none;
+}
+
+    .btnIndexNavbar:hover {
+        color: #0a50ad;
+    }
+
+.mainNavbarA {
+    color: #0a50ad;
+}
+.mainNavbarA:hover {
+    color: #808080;
+}
+
+    .mainNavbarA.active {
+        color: white;
+        background-color: #0a50ad;
+        border-radius:8px;
+    }
+
+.basvurFormA{
+
+}
+.basvurFormA:hover {
+    color: #0a50ad !important;
+}
+
+.hakkindaUl {
+    list-style-type: square;
+    color: #0a50ad;
+}
+    .hakkindaUl span {
+        color: black;
+    }
+
+#btnDokumanSil {
+    background: #0a50ad !important;
+   
+}
